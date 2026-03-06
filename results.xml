@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.352" tests="39" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-11-20T12:37:16" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="BuildApi" timestamp="2025-11-20T12:37:16" tests="0" file="D:\plugins\ucv-ext-build\test\unit\api\buildApi.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="getProjects" timestamp="2025-11-20T12:37:16" tests="3" file="D:\plugins\ucv-ext-build\test\unit\api\buildApi.test.js" time="0.013" failures="0">
+    <testcase name="BuildApi getProjects should fetch and transform project data" time="0.008" classname="should fetch and transform project data">
+    </testcase>
+    <testcase name="BuildApi getProjects should handle errors gracefully" time="0.001" classname="should handle errors gracefully">
+    </testcase>
+    <testcase name="BuildApi getProjects should use buildToken for Authorization header" time="0.002" classname="should use buildToken for Authorization header">
+    </testcase>
+  </testsuite>
+  <testsuite name="getBuildProcesses" timestamp="2025-11-20T12:37:16" tests="3" file="D:\plugins\ucv-ext-build\test\unit\api\buildApi.test.js" time="0.006" failures="0">
+    <testcase name="BuildApi getBuildProcesses should fetch and transform build processes" time="0.001" classname="should fetch and transform build processes">
+    </testcase>
+    <testcase name="BuildApi getBuildProcesses should throw error if fetch fails" time="0.001" classname="should throw error if fetch fails">
+    </testcase>
+    <testcase name="BuildApi getBuildProcesses should return empty array if build process data is empty" time="0.001" classname="should return empty array if build process data is empty">
+    </testcase>
+  </testsuite>
+  <testsuite name="getBuildLives" timestamp="2025-11-20T12:37:16" tests="6" file="D:\plugins\ucv-ext-build\test\unit\api\buildApi.test.js" time="0.009" failures="0">
+    <testcase name="BuildApi getBuildLives should fetch and transform build lives with pagination" time="0.001" classname="should fetch and transform build lives with pagination">
+    </testcase>
+    <testcase name="BuildApi getBuildLives should stop if no build lives are returned" time="0.001" classname="should stop if no build lives are returned">
+    </testcase>
+    <testcase name="BuildApi getBuildLives should throw error on fetch failure" time="0.001" classname="should throw error on fetch failure">
+    </testcase>
+    <testcase name="BuildApi getBuildLives should filter builds by process name if process is provided" time="0.001" classname="should filter builds by process name if process is provided">
+    </testcase>
+    <testcase name="BuildApi getBuildLives should increase offset for paginated results" time="0.002" classname="should increase offset for paginated results">
+    </testcase>
+    <testcase name="BuildApi getBuildLives should handle invalid API response shape gracefully" time="0.001" classname="should handle invalid API response shape gracefully">
+    </testcase>
+  </testsuite>
+  <testsuite name="UCVClient" timestamp="2025-11-20T12:37:16" tests="0" file="D:\plugins\ucv-ext-build\test\unit\client\ucvClient.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="initialize" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\client\ucvClient.test.js" time="0.161" failures="0">
+    <testcase name="UCVClient initialize should initialize VelocityApi" time="0.159" classname="should initialize VelocityApi">
+    </testcase>
+    <testcase name="UCVClient initialize should not initialize again if binding exists" time="0.000" classname="should not initialize again if binding exists">
+    </testcase>
+  </testsuite>
+  <testsuite name="reSync" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\client\ucvClient.test.js" time="0.002" failures="0">
+    <testcase name="UCVClient reSync should call updateScheduledEventStates and return result" time="0.000" classname="should call updateScheduledEventStates and return result">
+    </testcase>
+    <testcase name="UCVClient reSync should log and throw error" time="0.001" classname="should log and throw error">
+    </testcase>
+  </testsuite>
+  <testsuite name="uploadApplications" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\client\ucvClient.test.js" time="0.002" failures="0">
+    <testcase name="UCVClient uploadApplications should upload and return result" time="0.000" classname="should upload and return result">
+    </testcase>
+    <testcase name="UCVClient uploadApplications should throw and log error on failure" time="0.000" classname="should throw and log error on failure">
+    </testcase>
+  </testsuite>
+  <testsuite name="getIntegrationById" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\client\ucvClient.test.js" time="0.003" failures="0">
+    <testcase name="UCVClient getIntegrationById should return integration" time="0.000" classname="should return integration">
+    </testcase>
+    <testcase name="UCVClient getIntegrationById should throw and log error" time="0.000" classname="should throw and log error">
+    </testcase>
+  </testsuite>
+  <testsuite name="uploadProcesses" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\client\ucvClient.test.js" time="0.003" failures="0">
+    <testcase name="UCVClient uploadProcesses should upload processes" time="0.001" classname="should upload processes">
+    </testcase>
+    <testcase name="UCVClient uploadProcesses should log and throw on error" time="0.001" classname="should log and throw on error">
+    </testcase>
+  </testsuite>
+  <testsuite name="uploadBuilds" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\client\ucvClient.test.js" time="0.003" failures="0">
+    <testcase name="UCVClient uploadBuilds should upload builds and return result" time="0.001" classname="should upload builds and return result">
+    </testcase>
+    <testcase name="UCVClient uploadBuilds should throw and log error" time="0.000" classname="should throw and log error">
+    </testcase>
+  </testsuite>
+  <testsuite name="SyncApplicationsEvent.execute" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\scheduledEvents\syncApplicationsEvent.test.js" time="0.133" failures="0">
+    <testcase name="SyncApplicationsEvent.execute should initialize, fetch integration, transform, fetch projects and upload" time="0.002" classname="should initialize, fetch integration, transform, fetch projects and upload">
+    </testcase>
+    <testcase name="SyncApplicationsEvent.execute should throw and log error if integration is not found" time="0.131" classname="should throw and log error if integration is not found">
+    </testcase>
+  </testsuite>
+  <testsuite name="SyncBuildsEvent.execute" timestamp="2025-11-20T12:37:16" tests="3" file="D:\plugins\ucv-ext-build\test\unit\scheduledEvents\syncBuildsEvent.test.js" time="0.008" failures="0">
+    <testcase name="SyncBuildsEvent.execute should upload build lives" time="0.004" classname="should upload build lives">
+    </testcase>
+    <testcase name="SyncBuildsEvent.execute should not call uploadBuilds if no build lives found" time="0.002" classname="should not call uploadBuilds if no build lives found">
+    </testcase>
+    <testcase name="SyncBuildsEvent.execute should throw if integration is not found" time="0.001" classname="should throw if integration is not found">
+    </testcase>
+  </testsuite>
+  <testsuite name="SyncProcessesEvent.execute" timestamp="2025-11-20T12:37:16" tests="3" file="D:\plugins\ucv-ext-build\test\unit\scheduledEvents\syncProcessesEvent.test.js" time="0.005" failures="0">
+    <testcase name="SyncProcessesEvent.execute should fetch integration, call build API for each project and upload results" time="0.003" classname="should fetch integration, call build API for each project and upload results">
+    </testcase>
+    <testcase name="SyncProcessesEvent.execute should not call uploadProcesses if no build processes are returned" time="0.001" classname="should not call uploadProcesses if no build processes are returned">
+    </testcase>
+    <testcase name="SyncProcessesEvent.execute should throw and log error if integration is not found" time="0.001" classname="should throw and log error if integration is not found">
+    </testcase>
+  </testsuite>
+  <testsuite name="BuildTransformer" timestamp="2025-11-20T12:37:16" tests="0" file="D:\plugins\ucv-ext-build\test\unit\util\buildTransformer.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="transformApp" timestamp="2025-11-20T12:37:16" tests="1" file="D:\plugins\ucv-ext-build\test\unit\util\buildTransformer.test.js" time="0.001" failures="0">
+    <testcase name="BuildTransformer transformApp should transform an app object correctly" time="0.001" classname="should transform an app object correctly">
+    </testcase>
+  </testsuite>
+  <testsuite name="transformProcess" timestamp="2025-11-20T12:37:16" tests="1" file="D:\plugins\ucv-ext-build\test\unit\util\buildTransformer.test.js" time="0.001" failures="0">
+    <testcase name="BuildTransformer transformProcess should transform a process object correctly" time="0.001" classname="should transform a process object correctly">
+    </testcase>
+  </testsuite>
+  <testsuite name="transformBuild" timestamp="2025-11-20T12:37:16" tests="1" file="D:\plugins\ucv-ext-build\test\unit\util\buildTransformer.test.js" time="0.001" failures="0">
+    <testcase name="BuildTransformer transformBuild should transform build live data with version flag true" time="0.001" classname="should transform build live data with version flag true">
+    </testcase>
+  </testsuite>
+  <testsuite name="extractCommitSha" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\util\buildTransformer.test.js" time="0.000" failures="0">
+    <testcase name="BuildTransformer extractCommitSha should return the &quot;after&quot; field from payload JSON" time="0.000" classname="should return the &quot;after&quot; field from payload JSON">
+    </testcase>
+    <testcase name="BuildTransformer extractCommitSha should return null if payload not found" time="0.000" classname="should return null if payload not found">
+    </testcase>
+  </testsuite>
+  <testsuite name="extractRequestor" timestamp="2025-11-20T12:37:16" tests="2" file="D:\plugins\ucv-ext-build\test\unit\util\buildTransformer.test.js" time="0.000" failures="0">
+    <testcase name="BuildTransformer extractRequestor should return the requestor email from payload JSON" time="0.000" classname="should return the requestor email from payload JSON">
+    </testcase>
+    <testcase name="BuildTransformer extractRequestor should return user who triggered the build incase of manual build" time="0.000" classname="should return user who triggered the build incase of manual build">
+    </testcase>
+  </testsuite>
+</testsuites>
